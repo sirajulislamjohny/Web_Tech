@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sky Hospital Admin Portal</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #66cc66 0%, #2a9d8f 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    header {
+      max-width: 1200px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    header img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    }
+    header p {
+      font-size: 1.25rem;
+      font-weight: 300;
+      color: #e0f2f1;
+      margin-bottom: 30px;
+    }
+    main {
+      max-width: 900px;
+      width: 100%;
+      background-color: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 40px 30px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .feature-card {
+      background: rgba(255,255,255,0.25);
+      border-radius: 15px;
+      flex: 1 1 250px;
+      padding: 25px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      transition: background-color 0.3s ease;
+      cursor: default;
+    }
+    .feature-card:hover {
+      background-color: rgba(255,255,255,0.4);
+    }
+    .feature-card h3 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    .feature-card p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #dff6f0;
+    }
+    .cta {
+      text-align: center;
+    }
+    .cta a {
+      background-color: #e8483b;
+      color: white;
+      padding: 15px 40px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 6px 15px rgba(232, 72, 59, 0.7);
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+    .cta a:hover {
+      background-color: #c9302c;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #a5d6a7;
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .feature-card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="hospital-logo.png" alt="Sky Hospital Logo" />
+    <h1>Welcome to Sky Hospital Admin Portal</h1>
+    <p>Manage patients, doctors, appointments, and inventory effortlessly with our secure and intuitive dashboard.</p>
+  </header>
+
+  <main>
+    <section class="features">
+      <div class="feature-card">
+        <h3>Real-Time Patient Data</h3>
+        <p>Access and monitor patient records and health data instantly to provide better care.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Appointment Management</h3>
+        <p>Schedule, confirm, and track doctor appointments with ease and clarity.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Inventory Tracking</h3>
+        <p>Keep tabs on medical supplies like masks, gloves, syringes, and PPE to avoid shortages.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Detailed Analytics</h3>
+        <p>Visualize hospital performance metrics to make informed administrative decisions.</p>
+      </div>
+    </section>
+
+    <div class="cta">
+      <a href="LogIn.php">Get Started — Login</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Sky Hospital. All rights reserved.
+  </footer>
+</body>
+</html>
